@@ -10,4 +10,6 @@ public interface ISongService {
     void update(int id, Song song);
     void delete(int id);
     Song findById(int id);
+
+    void save(Song song);
 }

@@ -5,19 +5,16 @@ public class Song {
     private String name;
     private String artist;
     private String album;
-
-    private ListMusic listMusic;
     private String fileSong;
 
     public Song() {
     }
 
-    public Song(int id, String name, String artist, String album, ListMusic listMusic, String fileSong) {
+    public Song(int id, String name, String artist, String album, String fileSong) {
         this.id = id;
         this.name = name;
         this.artist = artist;
         this.album = album;
-        this.listMusic = listMusic;
         this.fileSong = fileSong;
     }
 
@@ -54,13 +51,6 @@ public class Song {
         this.album = album;
     }
 
-    public ListMusic getListMusic() {
-        return listMusic;
-    }
-
-    public void setListMusic(ListMusic listMusic) {
-        this.listMusic = listMusic;
-    }
 
     public String getFileSong() {
         return fileSong;

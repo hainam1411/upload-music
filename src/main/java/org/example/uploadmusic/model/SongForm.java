@@ -6,16 +6,23 @@ public class SongForm {
     private int id;
     private String name;
     private String artist;
-    private ListMusic listMusic;
+    private String album;
     private MultipartFile fileSong;
 
-    public SongForm() {
-    }
-    public SongForm(int id, String name, String artist, ListMusic listMusic, MultipartFile fileSong) {
+    public SongForm(int id, String name, String artist, String album, MultipartFile fileSong) {
         this.id = id;
         this.name = name;
         this.artist = artist;
-        this.listMusic = listMusic;
+        this.album = album;
+        this.fileSong = fileSong;
+    }
+
+    public SongForm() {
+    }
+    public SongForm(int id, String name, String artist, MultipartFile fileSong) {
+        this.id = id;
+        this.name = name;
+        this.artist = artist;
         this.fileSong = fileSong;
     }
 
@@ -43,12 +50,12 @@ public class SongForm {
         this.artist = artist;
     }
 
-    public ListMusic getListMusic() {
-        return listMusic;
+    public String getAlbum() {
+        return album;
     }
 
-    public void setListMusic(ListMusic listMusic) {
-        this.listMusic = listMusic;
+    public void setAlbum(String album) {
+        this.album = album;
     }
 
     public MultipartFile getFileSong() {
